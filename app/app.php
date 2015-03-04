@@ -26,6 +26,7 @@
             return $app['twig']->render('create_task.php', array('newtask' => $task));
 
     });
+
     $app->post("/delete_tasks", function() use ($app) {
             Task::deleteAll();
 
